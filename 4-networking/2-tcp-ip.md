@@ -26,3 +26,11 @@ The common configuration elements of TCP/IP and their purposes are as follows:
 1. Nameserver Address
 
 > The IP address, Netmask, Network Address, Broadcast Address, Gateway Address, and Nameserver Addresses are typically specified via the appropriate directives in the file `/etc/network/interfaces`.
+
+### 2.3. IP Routing
+
+Paths in a TCP/IP network along which network data may be sent. Routing uses a set of _routing tables_ to direct the forwarding of network data packets from source to destination, often via many intermediary network nodes known as _routers_.
+
+Two primary forms of IP routing:
+1. Static Routing (manually adding IP routes to system's routing table with the route command)
+1. Dynamic Routing (makes use of special routing protocols such as Router Information Protocol to handle automatic adjustments in routing tables)
