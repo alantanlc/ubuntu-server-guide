@@ -42,3 +42,12 @@ TCP is a connection-based protocol, offering error correction and guaranteed del
 ### 2.5. ICMP
 
 The Internet Control Messaging Protocol (ICMP) is an extension to the Internet Protocol (IP) as defined in the Request For Comments (RFC) #792 and supports network packets containing control, error, and informational messages. ICMP is used by such network aplications as the ping utility, which can determine the availability of a network host or device. Examples of some error messages returned by ICMP which are useful to both network hosts and devices such as routers, include _Destination Unreachable_ and _Time Exceeded_.
+
+### 2.6. Daemons
+
+Special system applications that run in the background and await requests for the functions they provide from other applications. Many daemons are network-centric; that is, a large number of daemons executing in the background on an Ubuntu system may provide network-related functionality.
+
+Examples:
+1. httpd
+1. sshd
+1. imapd
