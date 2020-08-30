@@ -34,3 +34,8 @@ Paths in a TCP/IP network along which network data may be sent. Routing uses a s
 Two primary forms of IP routing:
 1. Static Routing (manually adding IP routes to system's routing table with the route command)
 1. Dynamic Routing (makes use of special routing protocols such as Router Information Protocol to handle automatic adjustments in routing tables)
+
+### 2.4. TCP and UDP
+
+TCP is a connection-based protocol, offering error correction and guaranteed delivery of data via what is known as _flow control_. Flow control determines when the flow of a data stream needs to be stopped, and previously sent data packets should be re-sent due to problems such as _collions_, for example, thus ensuring complete and accurate delivery of the data. TCP is typically used in the exchange of imporant information such as database transactions.
+
