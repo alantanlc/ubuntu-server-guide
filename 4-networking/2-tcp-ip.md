@@ -39,3 +39,6 @@ Two primary forms of IP routing:
 
 TCP is a connection-based protocol, offering error correction and guaranteed delivery of data via what is known as _flow control_. Flow control determines when the flow of a data stream needs to be stopped, and previously sent data packets should be re-sent due to problems such as _collions_, for example, thus ensuring complete and accurate delivery of the data. TCP is typically used in the exchange of imporant information such as database transactions.
 
+### 2.5. ICMP
+
+The Internet Control Messaging Protocol (ICMP) is an extension to the Internet Protocol (IP) as defined in the Request For Comments (RFC) #792 and supports network packets containing control, error, and informational messages. ICMP is used by such network aplications as the ping utility, which can determine the availability of a network host or device. Examples of some error messages returned by ICMP which are useful to both network hosts and devices such as routers, include _Destination Unreachable_ and _Time Exceeded_.
