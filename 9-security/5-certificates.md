@@ -24,3 +24,19 @@ The process of getting a certificate from a CA is fairly easy. A quick overview 
 1. Send the certificate request, along with documents providing your identity, to a CA. We cannot tell you which certificate authority to choose. Your decision may be based on your past experiences, or on the experiences of your friends or colleagues, or purely on monetary factors. Once you have decided upon a CA, you need to follow the instructions they provide on how to obtain a certificate from them.
 1. When the CA is satisfied that you are indeed who you claim to be, they send you a digital certificate.
 1. Install this certificate on your secure server, and configure the appropriate applications to use the certificate.
+
+## 5.2. Generating a Certificate Signing Request (CSR)
+
+Whether you are getting a certificate from a CA or generating your own self-signed certificate, the first step is to generate a key.
+
+If the certificate will be used by service daemons, such as Apache, Postfix, Dovecot, etc., a key without a passphrase is often appropriate. Not having a passphrase allows the services to start without manual intervention, usually the preferred way to start a daemon.
+
+This section will cover generating a key with a passphrase, and one without. The non-phassphrase key will then be used to generate a certificate that can be used with various service daemons.
+
+> Running your secure service without a passphrase is convenient because you will not need to enter the passphrase every time your start your secure service. But it is insecure and a compromise of the key means a compromise of the server as well.
+
+To generate the _keys_ for the Certificate Signing Request (CSR) run the following command from a terminal prompt:
+
+```
+$ openssl genrsa -des3 -out server.key 2048
+```
