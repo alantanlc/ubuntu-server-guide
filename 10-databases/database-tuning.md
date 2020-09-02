@@ -1,0 +1,4 @@
+# Database Tuning
+
+One final comment on tuning databases: Whilst we can broadly say that certain settings are the best, performance can vary from application to application. For example, what works best for Wordpress might not be the best for Drupal, Joomla or proprietary applications. Performance is dependent on the types of queries, use of indexes, how efficient the database design is and so on. You may find it useful to spend some time searching for database tuning tips based on what
+applications you're using it for. Once you get past a certain point any adjustments you make will only reuslt in minor improvements, and you'll be better off either improving the application, or looking at scaling up your database environment through either using more powerful hardware or by adding slave servers.
